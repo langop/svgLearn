@@ -1,0 +1,29 @@
+:root{
+	--lineBColor: red;
+	--lineWidth: 10;
+}
+
+.fill_line{
+	fill: none;
+	stroke-width: var(--lineWidth);
+	stroke: var(--lineBColor);
+	stroke-linejoin: round;
+	stroke-linecap: round;
+	stroke-dasharray: 0, 1000;
+    stroke-dashoffset: 0;
+    animation: lxj 2s linear 2 alternate;
+}
+
+@keyframes lxj{
+	0%{
+		stroke-dasharray: 0, 1000;
+	}
+	80%{
+		stroke-dasharray:125, 125;
+		stroke-dashoffset: 250;
+	}
+	100%{
+		stroke-dasharray:1000, 0;
+		stroke-dashoffset: 0;
+	}
+}
