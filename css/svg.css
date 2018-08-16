@@ -27,3 +27,31 @@
 		stroke-dashoffset: 0;
 	}
 }
+
+/* 2 */
+.menuShape{
+	fill: none;
+	stroke-width: 2;
+	stroke: orange;
+	stroke-dasharray: 200 560;
+	stroke-dashoffset: -280;
+	z-index: 1;
+	transition: all linear 0.3s;
+}
+.menuSvg{
+	position: relative;
+	display: inline-block;
+}
+.menuSvg:hover .menuShape{
+	stroke-dasharray: 560 0;
+	stroke-dashoffset: 0;
+	stroke-width: 1;
+}
+.menuText{
+	width: 100%;
+	position: absolute;
+	left: 0;
+    top: 0;
+    line-height: 80px;
+    text-align: center;
+}
